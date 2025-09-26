@@ -1,0 +1,91 @@
+/* ========= GLOBAL LAYOUT ========= */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: url('../img/bgbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ========= CARD CONTAINER ========= */
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    backdrop-filter: blur(8px);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
+    width: 340px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ========= LOGO & TITLE ========= */
+.logo-title img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo-title h2 {
+    margin: 0 0 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+/* ========= FORM ========= */
+label {
+    display: block;
+    text-align: left;
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1f3f5b;
+}
+
+/* ========= BUTTON ========= */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #1f3f5b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+input[type="submit"]:hover {
+    background: #163147;
+}
+
+/* ========= ANIMATION ========= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

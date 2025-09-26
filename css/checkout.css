@@ -1,0 +1,53 @@
+ body{
+      font-family:Arial, sans-serif;
+      margin:0;
+      padding:0;
+      color:#fff;
+    }
+    .container{
+      max-width:800px;
+      margin:auto;
+      padding:40px 20px;
+      background:rgba(0,0,0,.75);
+      border-radius:15px;
+      margin-top:50px;
+    }
+    h1{
+      text-align:center;
+      color:#ffdd99;
+      margin-bottom:30px;
+    }
+    .order-summary{
+      background:#fff;
+      color:#333;
+      padding:20px;
+      border-radius:10px;
+    }
+    .item{
+      border-bottom:1px solid #ccc;
+      padding:10px 0;
+    }
+    .item:last-child{
+      border-bottom:none;
+    }
+    .item-name{
+      font-weight:bold;
+    }
+    .total{
+      text-align:right;
+      font-size:18px;
+      margin-top:20px;
+      color:#5a3e2b;
+    }
+    .back-btn{
+      display:inline-block;
+      margin-top:30px;
+      background:#5a3e2b;
+      color:#fff;
+      padding:10px 20px;
+      border-radius:5px;
+      text-decoration:none;
+    }
+    .back-btn:hover{
+      background:#432a1d;
+    }

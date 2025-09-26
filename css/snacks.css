@@ -1,0 +1,134 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f6f1;
+  margin: 0;
+  padding: 20px;
+  color: #3e2723;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a2c2a;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Categories Tiles (Products Page) ===== */
+.big-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.big-tile {
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.big-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.big-tile h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.big-tile:hover {
+  transform: scale(1.06);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Product Grid (Snacks / Drinks / Coffee Pages) ===== */
+.grid-container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 1.4rem;
+  margin: 12px 0 5px;
+  color: #5a3e2b;
+}
+
+.product-card p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #3e2723;
+}
+
+/* Hover animation */
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .big-grid {
+    gap: 25px;
+  }
+
+  .big-tile {
+    height: 250px;
+    font-size: 2rem;
+  }
+}
